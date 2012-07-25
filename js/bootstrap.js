@@ -12,6 +12,9 @@ requirejs.config({
       'vendor/backbone': {
         deps: ['vendor/underscore', 'wrapper/jquery'],
         exports: 'Backbone'
+      },
+      'vendor/underscore': {
+        exports: '_'
       }
     }
   }
