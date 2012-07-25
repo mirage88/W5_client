@@ -5,7 +5,7 @@ define([
     var calendarView = Backbone.View.extend({
       el: $('#calendar'),
       render: function() {
-        $('#calendar').fullCalendar({});
+        this.$el.fullCalendar({});
       }
     });
 
