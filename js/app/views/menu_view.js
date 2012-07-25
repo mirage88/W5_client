@@ -6,7 +6,7 @@ define([
     var menuView = Backbone.View.extend({
       el: $('#menu'),
       render: function() {
-        this.$el.append(_.template(menuViewTemplate, {string: 'at some point we will render something'}));
+        this.$el.append(_.template(menuViewTemplate, {primaryButton: 'Projects'}));
       }
     });
 

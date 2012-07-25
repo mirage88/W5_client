@@ -5,7 +5,11 @@ define([
     var calendarView = Backbone.View.extend({
       el: $('#calendar'),
       render: function() {
-        this.$el.fullCalendar({});
+        var calendarOptions = {
+          height: 650,
+          weekMode: 'liquid'
+        }
+        this.$el.fullCalendar(calendarOptions);
       }
     });
 

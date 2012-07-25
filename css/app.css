@@ -1,0 +1,18 @@
+div#app {
+  padding: 16px;
+}
+
+div#menu {
+  padding: 8px;
+}
+
+div#menu div#logo {
+  width: 124px;
+  height: 97px;
+  background: url('../img/logo.jpg') no-repeat;
+}
+
+div#menu div#navigation {
+  text-align: right;
+  vertical-align: middle;
+}
