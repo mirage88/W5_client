@@ -1,10 +1,6 @@
 define([
-    'vendor/fullcalendar',
-  ], function() {
-    return {
-      initialize: function() {
-        $('#calendar').fullCalendar({});
-      }
-    }
+    'app/views/app',
+  ], function(appView) {
+    appView.render();
   }
 );
