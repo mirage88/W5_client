@@ -8,6 +8,10 @@ requirejs.config({
     shim: {
       'vendor/fullcalendar': {
         deps: ['wrapper/jquery']
+      },
+      'vendor/backbone': {
+        deps: ['vendor/underscore', 'wrapper/jquery'],
+        exports: 'Backbone'
       }
     }
   }
@@ -15,7 +19,5 @@ requirejs.config({
 
 requirejs([
     'app/app'
-  ], function(App) {
-    App.initialize()
-  }
+  ]
 );
