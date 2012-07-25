@@ -6,12 +6,15 @@ requirejs.config({
       wrapper: 'libs/wrappers'
     },
     shim: {
-      'vendor/fullcalendar': {
-        deps: ['wrapper/jquery']
-      },
       'vendor/backbone': {
         deps: ['vendor/underscore', 'wrapper/jquery'],
         exports: 'Backbone'
+      },
+      'vendor/bootstrap/': {
+        deps: ['wrapper/jquery']
+      },
+      'vendor/fullcalendar': {
+        deps: ['wrapper/jquery']
       },
       'vendor/underscore': {
         exports: '_'
