@@ -13,9 +13,6 @@ requirejs.config({
       'vendor/bootstrap/': {
         deps: ['wrapper/jquery']
       },
-      'vendor/fullcalendar': {
-        deps: ['wrapper/jquery']
-      },
       'vendor/underscore': {
         exports: '_'
       }

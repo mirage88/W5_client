@@ -1,10 +1,8 @@
 define([
     'app/router',
-    'app/views/app/menu_view',
-    'app/views/app/calendar_view',
-  ], function(router, menuView, calendarView) {
+    'app/views/app/menu_view'
+  ], function(router, menuView) {
     router.initialize();
     menuView.render();
-    calendarView.render();
   }
 );
