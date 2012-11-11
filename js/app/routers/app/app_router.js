@@ -11,7 +11,7 @@ define([
     });
 
     var initialize = function() {
-      var aRouter = new appRouter;
+      var aRouter = new appRouter();
       aRouter.navigate('main', {trigger: true});
     };
 

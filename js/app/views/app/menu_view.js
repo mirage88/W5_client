@@ -10,6 +10,6 @@ define([
       }
     });
 
-    return new menuView;
+    return new menuView();
   }
 );

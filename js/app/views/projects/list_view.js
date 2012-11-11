@@ -18,6 +18,6 @@ define([
       }
     });
 
-    return new listView;
+    return new listView();
   }
 );

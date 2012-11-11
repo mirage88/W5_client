@@ -12,7 +12,7 @@ define([
     });
 
     var initialize = function() {
-      var pRouter = new projectsrouter;
+      var pRouter = new projectsrouter();
     };
 
     return {
