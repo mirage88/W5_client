@@ -1,6 +1,6 @@
 define([
     'vendor/backbone',
-    'app/views/projects/list_view'
+    'views/projects/list_view'
   ], function(Backbone, listView) {
     var ProjectsRouter = Backbone.Router.extend({
       routes: {

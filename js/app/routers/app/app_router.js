@@ -12,6 +12,7 @@ define([
 
     var initialize = function() {
       var aRouter = new AppRouter();
+      aRouter.main();
     };
 
     return {

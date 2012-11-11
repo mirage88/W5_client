@@ -1,7 +1,7 @@
 define([
     'vendor/backbone',
     'vendor/underscore',
-    'app/routers/app/app_router',
+    'routers/app/app_router',
     'text!templates/projects/list.html',
     'vendor/bootstrap'
   ], function(Backbone, _, appRouter, projectsListTemplate) {

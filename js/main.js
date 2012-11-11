@@ -2,6 +2,10 @@ requirejs.config({
     baseUrl: 'js/',
     paths: {
       app: 'app/',
+      collections: 'app/collections',
+      models: 'app/models',
+      routers: 'app/routers',
+      views: 'app/views',
       vendor: 'libs/vendor/',
       wrapper: 'libs/wrappers'
     },
