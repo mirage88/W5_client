@@ -5,7 +5,7 @@ define([
     'text!templates/projects/list.html',
     'vendor/bootstrap'
   ], function(Backbone, _, appRouter, projectsListTemplate) {
-    var listView = Backbone.View.extend({
+    var ListView = Backbone.View.extend({
       el: $('#projects'),
       render: function() {
         this.$el.addClass('modal');
@@ -18,6 +18,6 @@ define([
       }
     });
 
-    return new listView();
+    return new ListView();
   }
 );

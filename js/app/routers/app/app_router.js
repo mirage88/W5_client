@@ -1,7 +1,7 @@
 define([
     'vendor/backbone'
   ], function(Backbone) {
-    var appRouter = Backbone.Router.extend({
+    var AppRouter = Backbone.Router.extend({
       routes: {
         'main': 'main'
       },
@@ -11,8 +11,7 @@ define([
     });
 
     var initialize = function() {
-      var aRouter = new appRouter();
-      aRouter.navigate('main', {trigger: true});
+      var aRouter = new AppRouter();
     };
 
     return {

@@ -2,7 +2,7 @@ define([
     'vendor/backbone',
     'app/views/projects/list_view'
   ], function(Backbone, listView) {
-    var projectsrouter = Backbone.Router.extend({
+    var ProjectsRouter = Backbone.Router.extend({
       routes: {
         'projects/show': 'showAll'
       },
@@ -12,7 +12,7 @@ define([
     });
 
     var initialize = function() {
-      var pRouter = new projectsrouter();
+      var pRouter = new ProjectsRouter();
     };
 
     return {
