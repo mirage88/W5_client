@@ -20,7 +20,4 @@ requirejs.config({
   }
 );
 
-requirejs([
-    'app/app'
-  ]
-);
+requirejs(['app/app']);
