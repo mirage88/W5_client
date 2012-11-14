@@ -1,11 +1,18 @@
 define([
-    'routers/app/app_router',
+    'views/app/menu_view',
+    'collections/schedule',
     'routers/projects/projects_router',
-    'views/app/menu_view'
-  ], function(appRouter, projectsRouter, menuView) {
-    appRouter.initialize();
-    projectsRouter.initialize();
+  ], function(menuView, Schedule, projectsRouter) {
     menuView.render();
+
+    projectsRouter.initialize();
+
     Backbone.history.start();
+
+    var schedule = new Schedule();
+    jQuery.each(schedule.models, function() {
+      console.log(this.get('startDate'));
+    });
+
   }
 );
