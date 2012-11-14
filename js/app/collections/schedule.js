@@ -1,5 +1,5 @@
 define([
-    'vendor/backbone',
+    'backbone',
     'models/scheduled_week'
   ], function(Backbone, ScheduledWeek) {
     var Schedule = Backbone.Collection.extend({

@@ -1,9 +1,9 @@
 define([
-    'vendor/backbone',
-    'vendor/underscore',
+    'backbone',
+    'underscore',
     'routers/app/app_router',
     'text!templates/projects/list.html',
-    'vendor/bootstrap'
+    'bootstrap'
   ], function(Backbone, _, appRouter, projectsListTemplate) {
     var ListView = Backbone.View.extend({
       el: $('#projects'),

@@ -1,6 +1,6 @@
 define([
-    'vendor/backbone',
-    'vendor/underscore',
+    'backbone',
+    'underscore',
     'text!templates/menu.html'
   ], function(Backbone, _, menuViewTemplate) {
     var MenuView = Backbone.View.extend({

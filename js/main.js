@@ -1,24 +1,26 @@
 requirejs.config({
     baseUrl: 'js/',
     paths: {
-      app: 'app/',
+      jquery: 'libs/vendor/jquery-1.8.2.min',
+      underscore: 'libs/vendor/underscore-1.4.2.min',
+      backbone: 'libs/vendor/backbone-0.9.2.min',
+      bootstrap: 'libs/vendor/bootstrap-2.2.1.min',
+      app: 'app',
       collections: 'app/collections',
       models: 'app/models',
       routers: 'app/routers',
-      views: 'app/views',
-      vendor: 'libs/vendor/',
-      wrapper: 'libs/wrappers'
+      views: 'app/views'
     },
     shim: {
-      'vendor/backbone': {
-        deps: ['vendor/underscore', 'wrapper/jquery'],
+      underscore: {
+        exports: '_'
+      },
+      backbone: {
+        deps: ['underscore', 'jquery'],
         exports: 'Backbone'
       },
-      'vendor/bootstrap/': {
-        deps: ['wrapper/jquery']
-      },
-      'vendor/underscore': {
-        exports: '_'
+      bootstrap: {
+        deps: ['jquery']
       }
     }
   }
